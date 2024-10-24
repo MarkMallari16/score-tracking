@@ -22,3 +22,11 @@ function addTwoPoints(team) {
 function addThreePoints(team) {
     countScore(team, 3)
 }
+function resetScore(team) {
+    if (team === 1) {
+        teamOneScore = 0;
+    } else if (team === 2) {
+        teamTwoScore = 0;
+    }
+    updateScores();
+}

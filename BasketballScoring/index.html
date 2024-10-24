@@ -10,24 +10,32 @@
 
 <body>
     <div class="container">
-        <h1>Basketball Scoring</h1>
+        <header >
+            <h1 class="title">Basketball Score Tracking</h1>
+            <img src="ball.png" alt="ball" class="ball-img">
+        </header>
 
         <div class="child">
-          
             <div>
-                <h1 id="teamOneScore">0</h1>
-                <button onclick="addOnePoint(1)">+1</button>
-                <button onclick="addTwoPoints(1)">+2</button>
-                <button onclick="addThreePoints(1)">+3</button>
+                <h1 id="teamOneScore" class="score">0</h1>
+                <div class="button-container">
+                    <button class="button button-team-1" onclick="addOnePoint(1)">+1</button>
+                    <button class="button button-team-1" onclick="addTwoPoints(1)">+2</button>
+                    <button class="button button-team-1" onclick="addThreePoints(1)">+3</button>
+                    <button class="button reset-btn" onclick="resetScore(1)">RESET</button>
+                </div>
             </div>
             <div>
-                <h1>VS</h1>
+                <h1 class="vs">VS</h1>
             </div>
             <div>
-                <h1 id="teamTwoScore">0</h1>
-                <button onclick="addOnePoint(2)">+1</button>
-                <button onclick="addTwoPoints(2)">+2</button>
-                <button onclick="addThreePoints(2)">+3</button>
+                <h1 id="teamTwoScore" class="score">0</h1>
+                <div class="button-container">
+                    <button class="button button-team-2" onclick="addOnePoint(2)">+1</button>
+                    <button class="button button-team-2" onclick="addTwoPoints(2)">+2</button>
+                    <button class="button button-team-2" onclick="addThreePoints(2)">+3</button>
+                    <button class="button reset-btn" onclick="resetScore(2)">RESET</button>
+                </div>
             </div>
         </div>
 
